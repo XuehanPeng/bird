@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlappyBird</title>
+    <!--引入一个seajs文件-->
+    <script src="seajs/2.2.0/sea.js"></script>
+</head>
+
+<body>
+<canvas id="cvs" width="800" height="600" style="border: 1px solid black;"></canvas>
+<script>
+    //获取画布和钢笔，多个模块公用部分
+    var cvs = document.getElementById('cvs');
+    var ctx = cvs.getContext('2d');
+
+    seajs.config({
+        base: "./module/",
+        alias: {
+
+        }
+    });
+    seajs.use("load_imgs");
+
+
+</script>
+</body>
+
+</html>
